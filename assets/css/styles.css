@@ -2,40 +2,40 @@
    DESIGN TOKENS  (adapted from DESIGN.md)
    ============================================================ */
 :root {
-  /* Brand */
-  --primary:          #cc785c;
-  --primary-active:   #a9583e;
-  --primary-disabled: #e6dfd8;
+  /* Brand — Forest Green */
+  --primary:          #3a6b4a;
+  --primary-active:   #2b5237;
+  --primary-disabled: #c8dece;
 
   /* Text */
-  --ink:         #141413;
-  --body-strong: #252523;
-  --body:        #3d3d3a;
-  --muted:       #6c6a64;
-  --muted-soft:  #8e8b82;
+  --ink:         #131a14;
+  --body-strong: #233028;
+  --body:        #3a4a3e;
+  --muted:       #627568;
+  --muted-soft:  #8aa090;
 
   /* Borders */
-  --hairline:      #e6dfd8;
-  --hairline-soft: #ebe6df;
+  --hairline:      #d5e4d2;
+  --hairline-soft: #dceada;
 
   /* Surfaces */
-  --canvas:               #faf9f5;
-  --surface-soft:         #f5f0e8;
-  --surface-card:         #efe9de;
-  --surface-cream-strong: #e8e0d2;
-  --surface-dark:         #181715;
-  --surface-dark-elevated:#252320;
-  --surface-dark-soft:    #1f1e1b;
+  --canvas:               #f6f9f5;
+  --surface-soft:         #ecf3ea;
+  --surface-card:         #e2ece0;
+  --surface-cream-strong: #d5e4d2;
+  --surface-dark:         #182016;
+  --surface-dark-elevated:#203020;
+  --surface-dark-soft:    #1c2b1a;
 
   /* On-surface text */
   --on-primary:   #ffffff;
-  --on-dark:      #faf9f5;
-  --on-dark-soft: #a09d96;
+  --on-dark:      #f2f9f0;
+  --on-dark-soft: #90a890;
 
   /* Accents */
-  --accent-teal:  #5db8a6;
-  --accent-amber: #e8a55a;
-  --success:      #5db872;
+  --accent-teal:  #4ab38a;
+  --accent-amber: #cc9a3a;
+  --success:      #52b870;
 
   /* Radius */
   --r-xs:   4px;
@@ -637,7 +637,7 @@ h3 {
 }
 
 .au-notice {
-  background-color: rgba(204,120,92,0.12);
+  background-color: rgba(58,107,74,0.12);
   border-left: 2px solid var(--primary);
   border-radius: 0 var(--r-md) var(--r-md) 0;
   padding: var(--s-md) var(--s-lg);
