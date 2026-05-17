@@ -160,6 +160,8 @@ img { display: block; max-width: 100%; }
 
 .site-nav a:hover { color: var(--ink); }
 .site-nav a.active { color: var(--ink); }
+.site-nav a.btn-primary,
+.site-nav a.btn-primary:hover { color: var(--on-primary); }
 
 .nav-toggle {
   display: none;
