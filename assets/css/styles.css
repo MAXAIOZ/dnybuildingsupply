@@ -659,36 +659,46 @@ h3 {
 
 .step {
   display: grid;
-  grid-template-columns: 48px 1fr;
-  gap: var(--s-lg);
-  align-items: start;
+  grid-template-columns: 80px 1fr;
+  grid-template-rows: auto auto;
+  column-gap: var(--s-xl);
+  row-gap: var(--s-xs);
   background-color: var(--surface-card);
   border-radius: var(--r-lg);
   padding: var(--s-xl);
 }
 
 .step-num {
-  font-family: var(--font-mono);
-  font-size: 13px;
+  grid-column: 1;
+  grid-row: 1 / 3;
+  align-self: center;
+  font-family: var(--font-serif);
+  font-size: 42px;
   font-weight: 400;
+  letter-spacing: -1px;
+  line-height: 1;
   color: var(--primary);
-  padding-top: 4px;
-  flex-shrink: 0;
 }
 
 .step h3 {
+  grid-column: 2;
+  grid-row: 1;
   font-family: var(--font-sans);
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 0;
   color: var(--ink);
-  margin-bottom: var(--s-xs);
+  line-height: 1.4;
+  margin: 0;
 }
 
 .step p {
+  grid-column: 2;
+  grid-row: 2;
   font-size: 14px;
   line-height: 1.6;
   color: var(--body);
+  margin: 0;
 }
 
 /* ============================================================
@@ -922,6 +932,73 @@ h3 {
 }
 
 /* ============================================================
+   PHOTO INTEGRATIONS
+   ============================================================ */
+
+/* Hero: photo replaces dark mockup card */
+.hero-photo {
+  aspect-ratio: 4/3;
+  min-height: 340px;
+}
+.hero-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* About: text column */
+.about-text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-md);
+}
+.about-text h2 { margin-top: var(--s-sm); }
+
+/* About: photo column */
+.about-photo {
+  border-radius: var(--r-xl);
+  overflow: hidden;
+  aspect-ratio: 4/3;
+}
+.about-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* AI section: photo replaces code-window-card */
+.ai-photo-card {
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  aspect-ratio: 4/3;
+}
+.ai-photo-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Australia Market: warehouse photo inside au-panel */
+.au-photo {
+  border-radius: var(--r-sm);
+  overflow: hidden;
+  aspect-ratio: 16/9;
+  margin-bottom: var(--s-lg);
+}
+.au-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Grid variant: vertically center both columns */
+.grid-2--center { align-items: center; }
+
+/* ============================================================
    RESPONSIVE — TABLET  (≤ 1080px)
    ============================================================ */
 @media (max-width: 1080px) {
@@ -982,8 +1059,8 @@ h3 {
   .check-list,
   .check-list--3col { grid-template-columns: 1fr; }
 
-  .step { grid-template-columns: 1fr; gap: var(--s-sm); }
-  .step-num { padding-top: 0; }
+  .step { grid-template-columns: 52px 1fr; column-gap: var(--s-lg); }
+  .step-num { font-size: 28px; }
 
   .cta-band-coral h2 { font-size: 28px; }
   .lead { font-size: 16px; }
