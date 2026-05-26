@@ -126,6 +126,12 @@ img { display: block; max-width: 100%; }
   line-height: 1;
 }
 
+.brand-logo {
+  display: block;
+  height: 32px;
+  width: auto;
+}
+
 .brand-name {
   font-family: var(--font-sans);
   font-size: 15px;
@@ -896,6 +902,12 @@ h3 {
 .footer-brand-mark {
   color: var(--primary);
   font-size: 16px;
+}
+
+.footer-logo {
+  display: block;
+  height: 40px;
+  width: auto;
 }
 
 .footer-desc {
